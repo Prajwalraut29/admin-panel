@@ -1,0 +1,65 @@
+/* Add this styling in your CSS file or directly in your React component */
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  color: #333;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li button {
+  background-color: #d9534f;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #c9302c;
+}
