@@ -14,7 +14,7 @@ function App() {
 
   const fetchBotSettings = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/settings');
+      const response = await axios.get('https://admin-panel-m2oz.onrender.com/settings');
       setBotSettings(response.data);
     } catch (error) {
       console.error('Error fetching bot settings:', error.message);
@@ -23,7 +23,7 @@ function App() {
 
   const fetchUserAccounts = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/users');
+      const response = await axios.get('https://admin-panel-m2oz.onrender.com/users');
       setUserAccounts(response.data);
     } catch (error) {
       console.error('Error fetching user accounts:', error.message);
@@ -32,7 +32,7 @@ function App() {
 
   const handleSaveSettings = async () => {
     try {
-      await axios.post('http://localhost:3000/settings', botSettings);
+      await axios.post('https://admin-panel-m2oz.onrender.com/settings', botSettings);
       alert('Settings saved successfully!');
     } catch (error) {
       console.error('Error saving settings:', error.message);
@@ -41,7 +41,7 @@ function App() {
 
   const handleDeleteUser = async (userId) => {
     try {
-      await axios.delete(`http://localhost:3000/users/${userId}`);
+      await axios.delete(`https://admin-panel-m2oz.onrender.com/users/${userId}`);
       fetchUserAccounts();
       alert('User deleted successfully!');
     } catch (error) {
